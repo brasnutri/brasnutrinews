@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasnutri News Clipping - Março 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Rubik', sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .logo {
+            margin-bottom: 30px;
+        }
+
+        .logo img {
+            height: 80px;
+            object-fit: contain;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #003366;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #666666;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .date {
+            font-size: 13px;
+            color: #999999;
+            margin-bottom: 25px;
+        }
+
+        .intro-box {
+            background-color: #EFEFE8;
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .intro-box p {
+            font-size: 15px;
+            color: #333333;
+            line-height: 1.7;
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        article {
+            margin-bottom: 50px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        article:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .outlet {
+            font-size: 18px;
+            font-weight: 700;
+            color: #003366;
+            margin-bottom: 12px;
+        }
+
+        .article-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #003366;
+            margin-bottom: 15px;
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        .summary {
+            font-size: 15px;
+            color: #333333;
+            margin-bottom: 20px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        .key-point-box {
+            background-color: #EFEFE8;
+            border-left: 4px solid #0597F2;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .key-point-label {
+            font-size: 12px;
+            font-weight: 700;
+            color: #003366;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .key-point-text {
+            font-size: 14px;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        .contribution {
+            margin-bottom: 20px;
+        }
+
+        .contribution-label {
+            font-size: 12px;
+            font-weight: 700;
+            color: #003366;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .contribution-text {
+            font-size: 14px;
+            color: #333333;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        .read-link {
+            font-size: 14px;
+            margin-top: 15px;
+        }
+
+        .read-link a {
+            color: #0597F2;
+            text-decoration: none;
+            font-weight: 600;
+            word-break: break-all;
+        }
+
+        .read-link a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #EFEFE8;
+            border-top: 1px solid #e5e5e5;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .footer-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #003366;
+            margin-bottom: 15px;
+        }
+
+        .footer-text {
+            font-size: 15px;
+            color: #333333;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        @media print {
+            body {
+                background-color: #ffffff;
+            }
+            header {
+                border-bottom: 2px solid #003366;
+                page-break-after: avoid;
+            }
+            article {
+                page-break-inside: avoid;
+            }
+            footer {
+                page-break-before: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+            .subtitle {
+                font-size: 16px;
+            }
+            .container {
+                padding: 0 15px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            main {
+                padding: 30px 15px;
+            }
+            footer {
+                padding: 30px 15px;
+            }
+            .article-title {
+                font-size: 18px;
+            }
+            .summary {
+                font-size: 14px;
+            }
+            .intro-box {
+                padding: 20px;
+            }
+            .intro-box p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://cdn-retailhub.com/athletica-nutrition/3801d4cf-0aab-4db6-9b48-0c15d55ac415.png" alt="Brasnutri Logo">
+            </div>
+            <h1>BRASNUTRI NEWS</h1>
+            <p class="subtitle">Clipping de Imprensa | Atualizações do Setor</p>
+            <p class="date">Março 2026</p>
+            <div class="intro-box">
+                <p>Compartilhamos três matérias recentes que destacam o crescimento do mercado de suplementos no Brasil e reforçam o papel institucional da Brasnutri na representação do setor. O trabalho de comunicação e assessoria de imprensa tem contribuído para ampliar a presença do tema na mídia e fortalecer a percepção de qualidade, profissionalização e relevância econômica da indústria.</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <article>
+                <div class="outlet">FiteStrong <span style="font-weight: 400; color: #999999; font-size: 13px;">| 06/03/2026</span></div>
+                <h2 class="article-title">Brasnutri: qualidade, primor regulatório e protagonismo no setor de suplementos</h2>
+                <p class="summary">A matéria apresenta a Brasnutri como uma das principais entidades representativas do setor de suplementos alimentares no Brasil, destacando o compromisso das empresas associadas com qualidade, conformidade regulatória e boas práticas de fabricação.</p>
+
+                <div class="key-point-box">
+                    <div class="key-point-label">Ponto chave</div>
+                    <div class="key-point-text">Reforço do posicionamento do setor como uma indústria estruturada e alinhada às exigências regulatórias.</div>
+                </div>
+
+                <div class="contribution">
+                    <div class="contribution-label">Contribuição da Brasnutri</div>
+                    <p class="contribution-text">A reportagem evidencia a atuação institucional da associação como interlocutora do setor junto a órgãos reguladores e na defesa da qualidade e da profissionalização do mercado.</p>
+                </div>
+
+                <div class="read-link">
+                    <a href="https://fitestrong.com.br/secaodesktop/nutricao/7428/brasnutri--qualidade-primor-regulatorio-e-protagonismo-no-setor-de-suplementos" target="_blank">Leia a matéria: https://fitestrong.com.br/secaodesk/nutrição/7428/brasnutri--qualidade-primor-regulatorio-e-protagonismo-no-setor-de-suplementos</a>
+                </div>
+            </article>
+
+            <article>
+                <div class="outlet">BP Money <span style="font-weight: 400; color: #999999; font-size: 13px;">| 06/03/2026</span></div>
+                <h2 class="article-title">15% ao ano, todo ano: o setor que ninguém para de comprar</h2>
+                <p class="summary">A reportagem aborda o crescimento consistente do mercado de suplementos no Brasil, destacando o aumento da demanda impulsionado pela busca por saúde, bem-estar e nutrição preventiva.</p>
+
+                <div class="key-point-box">
+                    <div class="key-point-label">Ponto chave</div>
+                    <div class="key-point-text">O setor mantém ritmo de crescimento anual relevante e amplia sua base de consumidores em diferentes canais de venda.</div>
+                </div>
+
+                <div class="contribution">
+                    <div class="contribution-label">Contribuição da Brasnutri</div>
+                    <p class="contribution-text">A associação contribui com informações e contexto sobre o desenvolvimento do mercado brasileiro, reforçando o papel do setor na economia e na promoção da saúde e da nutrição.</p>
+                </div>
+
+                <div class="read-link">
+                    <a href="https://bpmoney.com.br/brasil/15-ao-ano-todo-ano-o-setor-que-ninguem-para-de-comprar/" target="_blank">Leia a matéria: https://bpmoney.com.br/brasil/15-ao-ano-todo-ano-o-setor-que-ninguem-para-de-comprar/</a>
+                </div>
+            </article>
+
+            <article>
+                <div class="outlet">Globo Play <span style="font-weight: 400; color: #999999; font-size: 13px;">| 11/03/2026</span></div>
+                <h2 class="article-title">Cresce o uso de suplementos entre praticantes de atividade física</h2>
+                <p class="summary">O Brasil registra aumento anual acima de 20% no setor de suplementos. A reportagem mostra como Daiane organiza a alimentação para sustentar vários treinos diários e reforça a importância da orientação nutricional. Vendedores e profissionais explicam produtos como creatina e whey.</p>
+
+                <div class="key-point-box">
+                    <div class="key-point-label">Ponto chave</div>
+                    <div class="key-point-text">Crescimento do setor que irá dobrar até 2030.</div>
+                </div>
+
+                <div class="contribution">
+                    <div class="contribution-label">Contribuição da Brasnutri</div>
+                    <p class="contribution-text">Brasil sendo o terceiro mercado do mundo em consumo de suplementos alimentares, reforçando a relevância da indústria brasileira e o papel institucional da Brasnutri na representação deste setor estratégico.</p>
+                </div>
+
+                <div class="read-link">
+                    <a href="https://globoplay.globo.com/v/14420186/" target="_blank">Leia a matéria: https://globoplay.globo.com/v/14420186/</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3 class="footer-title">Comunicação Brasnutri</h3>
+            <p class="footer-text">Seguimos trabalhando para ampliar a presença do setor de suplementos alimentares na imprensa e fortalecer a imagem da indústria brasileira junto à sociedade, ao mercado e aos órgãos reguladores.</p>
+            
+            <div style="margin-top: 30px; padding-top: 30px; border-top: 1px solid #d0d0d0;">
+                <h4 style="font-size: 14px; font-weight: 700; color: #003366; margin-bottom: 12px;">Assessoria de Imprensa</h4>
+                <p style="font-size: 13px; color: #333333; margin-bottom: 8px;">
+                    <strong>Maria Christina Godinho (Chris)</strong><br>
+                    Assessoria de Imprensa | BRASNUTRI
+                </p>
+                <p style="font-size: 13px; color: #333333; line-height: 1.6;">
+                    📱 <a href="tel:+5511989277095" style="color: #0597F2; text-decoration: none; font-weight: 600;">+55 (11) 98927-7095</a><br>
+                    📬 <a href="mailto:assessoria@brasnutri.org.br" style="color: #0597F2; text-decoration: none; font-weight: 600;">assessoria@brasnutri.org.br</a><br>
+                    📬 <a href="mailto:chris@contatomcg.com.br" style="color: #0597F2; text-decoration: none; font-weight: 600;">chris@contatomcg.com.br</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
